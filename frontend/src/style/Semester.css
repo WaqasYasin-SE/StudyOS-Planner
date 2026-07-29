@@ -1,0 +1,389 @@
+/* ==========================
+   Semester Page
+========================== */
+
+.semester-page {
+
+    padding: 30px;
+
+    background: #f5f7fb;
+
+    min-height: 100vh;
+
+}
+
+.semester-header {
+
+    margin-bottom: 25px;
+
+}
+
+.semester-header h1 {
+
+    color: #1f2937;
+
+    font-size: 32px;
+
+}
+
+.semester-header p {
+
+    color: #6b7280;
+
+    margin-top: 5px;
+
+}
+
+/* ==========================
+   Semester Form
+========================== */
+
+.semester-form {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+
+}
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 20px;
+
+}
+
+.form-group label {
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+.form-group input {
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+}
+
+.form-group input:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+}
+
+/* ==========================
+   Form Buttons
+========================== */
+
+.form-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+}
+
+.form-buttons button {
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+.form-buttons button:first-child {
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+.form-buttons button:first-child:hover {
+
+    background: #1d4ed8;
+
+}
+
+.cancel-btn {
+
+    background: #6b7280;
+
+    color: white;
+
+}
+
+.cancel-btn:hover {
+
+    background: #4b5563;
+
+}
+
+/* ==========================
+   Semester Grid
+========================== */
+
+.semester-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+
+}
+
+/* ==========================
+   Semester Card
+========================== */
+
+.semester-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
+}
+
+.semester-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+
+}
+
+.semester-card-header {
+
+    margin-bottom: 15px;
+
+}
+
+.semester-card-header h2 {
+
+    color: #2563eb;
+
+}
+
+.semester-card-body p {
+
+    margin: 8px 0;
+
+    color: #374151;
+
+}
+
+.semester-card-footer {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+.edit-btn {
+
+    flex: 1;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    background: #f59e0b;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+.edit-btn:hover {
+
+    background: #d97706;
+
+}
+
+.delete-btn {
+
+    flex: 1;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    background: #ef4444;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+.delete-btn:hover {
+
+    background: #dc2626;
+
+}
+
+/* ==========================
+   Empty State
+========================== */
+
+.empty-state {
+
+    background: white;
+
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    color: #6b7280;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+
+}
+
+/* ==========================
+   Delete Modal
+========================== */
+
+.modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .45);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1000;
+
+}
+
+.delete-modal {
+
+    width: 400px;
+
+    max-width: 90%;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+
+}
+
+.delete-modal h2 {
+
+    color: #ef4444;
+
+    margin-bottom: 15px;
+
+}
+
+.delete-modal p {
+
+    margin: 10px 0;
+
+    color: #4b5563;
+
+}
+
+.modal-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+.modal-buttons button {
+
+    flex: 1;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+
+    .semester-page {
+
+        padding: 20px;
+
+    }
+
+    .form-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .semester-card-footer {
+
+        flex-direction: column;
+
+    }
+
+    .modal-buttons {
+
+        flex-direction: column;
+
+    }
+
+}

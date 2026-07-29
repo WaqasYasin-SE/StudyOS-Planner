@@ -1,0 +1,46 @@
+/* ==========================
+   Fonts (shared brand type system)
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap');
+
+/* ==========================
+   Main Layout
+========================== */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* ==========================
+   Layout Body
+========================== */
+
+.layout-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* ==========================
+   Main Content
+========================== */
+
+.layout-content {
+    flex: 1;
+    padding: 28px 32px;
+    overflow-y: auto;
+    background-color: #FAF8F3;
+}
+
+/* Give content-area headings the brand display face by default,
+   so pages dropped into the Outlet inherit the look without extra work. */
+.layout-content h1,
+.layout-content h2,
+.layout-content h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #1A1F2E;
+}

@@ -1,0 +1,435 @@
+StudySprint/
+│
+├──────────────────────────────────────────────────────────────
+│ FRONTEND
+├──────────────────────────────────────────────────────────────
+│
+├── public/
+│   │
+│   ├── favicon.ico
+│   ├── logo.png
+│   └── robots.txt
+│
+│   Role
+│   • Static files served directly.
+│
+├── src/
+│
+│   ├──────────────────────────────────────────────
+│   │ Application Entry
+│   ├──────────────────────────────────────────────
+│
+│   ├── main.jsx
+│   │
+│   │ Starts React.
+│   │
+│   │ ReactDOM
+│   │      │
+│   │      ▼
+│   │ BrowserRouter
+│   │      │
+│   │ AuthProvider
+│   │      │
+│   │ ToastContainer
+│   │      │
+│   │ App.jsx
+│
+│   ├── App.jsx
+│   │
+│   │ Main Router
+│   │
+│   │ Decides
+│   │
+│   │ Login
+│   │ Register
+│   │ Dashboard
+│   │ Subjects
+│   │ Tasks
+│   │ Analytics
+│
+│   ├── index.css
+│   │
+│   │ Global CSS
+│   │
+│   │ body
+│   │ font
+│   │ scrollbar
+│   │ variables
+│
+│
+│   ├──────────────────────────────────────────────
+│   │ API Layer
+│   ├──────────────────────────────────────────────
+│
+│   ├── api/
+│   │
+│   │ api.js
+│   │
+│   │ Role
+│   │
+│   │ axios
+│   │
+│   │ Base URL
+│   │ JWT Token
+│   │ Interceptors
+│   │ Error Handling
+│
+│
+│   ├──────────────────────────────────────────────
+│   │ Global State
+│   ├──────────────────────────────────────────────
+│
+│   ├── context/
+│   │
+│   │ AuthContext.jsx
+│   │
+│   │ Stores
+│   │
+│   │ Logged User
+│   │ JWT
+│   │ Login
+│   │ Logout
+│   │ Authentication State
+│
+│
+│   ├──────────────────────────────────────────────
+│   │ Pages
+│   ├──────────────────────────────────────────────
+│
+│   ├── pages/
+│   │
+│   ├── Login.jsx
+│   │
+│   │ Entire Login Screen
+│   │
+│   ├── Register.jsx
+│   │
+│   │ Registration Screen
+│   │
+│   ├── Dashboard.jsx
+│   │
+│   │ Dashboard Screen
+│   │
+│   ├── Semesters.jsx
+│   │
+│   │ Semester Management
+│   │
+│   ├── Subjects.jsx
+│   │
+│   │ Subject Management
+│   │
+│   ├── Tasks.jsx
+│   │
+│   │ Task Management
+│   │
+│   ├── StudySessions.jsx
+│   │
+│   │ Study Session Management
+│   │
+│   └── Analytics.jsx
+│
+│
+│   Every page
+│
+│   User
+│       │
+│       ▼
+│   Page
+│       │
+│       ▼
+│   Components
+│       │
+│       ▼
+│   API
+│       │
+│       ▼
+│   Backend
+│
+│
+│
+│   ├──────────────────────────────────────────────
+│   │ Components
+│   ├──────────────────────────────────────────────
+│
+│   ├── components/
+│
+│
+│   ├── common/
+│   │
+│   ├── Navbar.jsx
+│   │
+│   │ Top Navigation
+│   │
+│   ├── Sidebar.jsx
+│   │
+│   │ Left Navigation
+│   │
+│   ├── ProtectedRoute.jsx
+│   │
+│   │ Checks Login
+│   │
+│   │ Logged In?
+│   │
+│   │ YES
+│   │
+│   │ Show Page
+│   │
+│   │ NO
+│   │
+│   │ Login
+│
+│
+│
+│   ├── dashboard/
+│   │
+│   ├── DashboardCard.jsx
+│   │
+│   │ One Statistic Card
+│   │
+│   ├── ProgressCard.jsx
+│   │
+│   │ Progress Bar
+│   │
+│   ├── QuickActions.jsx
+│   │
+│   │ Buttons
+│   │
+│   ├── UpcomingTasks.jsx
+│   │
+│   │ Upcoming Tasks
+│   │
+│   └── RecentSessions.jsx
+│
+│
+│
+│   Dashboard Page
+│
+│   Dashboard.jsx
+│        │
+│        ├──────── DashboardCard
+│        ├──────── DashboardCard
+│        ├──────── DashboardCard
+│        ├──────── ProgressCard
+│        ├──────── UpcomingTasks
+│        └──────── RecentSessions
+│
+│
+│
+│   ├── semesters/
+│   │
+│   ├── SemesterForm.jsx
+│   │
+│   │ Create
+│   │ Edit
+│   │
+│   ├── SemesterCard.jsx
+│   │
+│   │ Shows One Semester
+│   │
+│   └── DeleteSemesterModal.jsx
+│
+│
+│
+│   Semester Page
+│
+│   Semesters.jsx
+│        │
+│        ├──────── SemesterForm
+│        ├──────── SemesterCard
+│        ├──────── SemesterCard
+│        ├──────── SemesterCard
+│        └──────── DeleteSemesterModal
+│
+│
+│
+│   ├── subjects/
+│   │
+│   ├── SubjectForm.jsx
+│   ├── SubjectCard.jsx
+│   └── DeleteSubjectModal.jsx
+│
+│
+│
+│   ├── tasks/
+│   │
+│   ├── TaskForm.jsx
+│   ├── TaskCard.jsx
+│   └── DeleteTaskModal.jsx
+│
+│
+│
+│   ├── studySessions/
+│   │
+│   ├── StudySessionForm.jsx
+│   ├── StudySessionCard.jsx
+│   └── DeleteStudySessionModal.jsx
+│
+│
+│
+│   ├── analytics/
+│   │
+│   ├── AnalyticsCard.jsx
+│   ├── TaskStatusChart.jsx
+│   ├── StudyHoursChart.jsx
+│   └── ProgressSummary.jsx
+│
+│
+│
+│   Component Rule
+│
+│   One Component
+│
+│   One Responsibility
+│
+│
+│
+│   ├──────────────────────────────────────────────
+│   │ Styling
+│   ├──────────────────────────────────────────────
+│
+│   ├── style/
+│   │
+│   ├── Dashboard.css
+│   ├── Semester.css
+│   ├── Subject.css
+│   ├── Task.css
+│   ├── StudySession.css
+│   ├── Analytics.css
+│   ├── Login.css
+│   └── Register.css
+│
+│
+│   Role
+│
+│   Only UI
+│
+│   Colors
+│   Font
+│   Padding
+│   Margin
+│   Animation
+│   Responsive Design
+│
+│
+│
+│   ├──────────────────────────────────────────────
+│   │ Assets
+│   ├──────────────────────────────────────────────
+│
+│   ├── assets/
+│   │
+│   ├── images/
+│   ├── icons/
+│   ├── logo.png
+│   └── avatar.png
+│
+│
+│
+│
+├──────────────────────────────────────────────────────────────
+│ DATA FLOW
+├──────────────────────────────────────────────────────────────
+│
+│ User Clicks Button
+│
+│        │
+│        ▼
+│
+│ Page.jsx
+│
+│        │
+│        ▼
+│
+│ Component
+│
+│        │
+│        ▼
+│
+│ api.js
+│
+│        │
+│        ▼
+│
+│ FastAPI
+│
+│        │
+│        ▼
+│
+│ PostgreSQL
+│
+│        │
+│        ▼
+│
+│ JSON Response
+│
+│        │
+│        ▼
+│
+│ Component State
+│
+│        │
+│        ▼
+│
+│ Screen Updates
+│
+├──────────────────────────────────────────────────────────────
+│ THINK LIKE THIS
+├──────────────────────────────────────────────────────────────
+│
+│ Page
+│
+│ = Entire Screen
+│
+│
+│ Component
+│
+│ = Small Reusable Piece
+│
+│
+│ Context
+│
+│ = Global Memory
+│
+│
+│ API
+│
+│ = Talks to Backend
+│
+│
+│ Style
+│
+│ = Appearance Only
+│
+│
+│ Assets
+│
+│ = Images & Icons
+│
+│
+│ App.jsx
+│
+│ = Traffic Controller (Routing)
+│
+│
+│ main.jsx
+│
+│ = Application Starting Point
+│
+└──────────────────────────────────────────────────────────────
+
+cd frontend
+npm run dev
+
+
+
+
+
+cd backend
+uvicorn app.main:app --reload
+
+
+wiki@example.com
+string1234
+
+
+.\backend\.venv\Scripts\Activate

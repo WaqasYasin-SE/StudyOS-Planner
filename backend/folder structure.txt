@@ -1,0 +1,121 @@
+backend/
+│
+├── app/
+│   │
+│   ├── main.py
+│   │   → Starts FastAPI and registers routers
+│   │
+│   ├── database.py
+│   │   → SQLAlchemy engine, session, Base
+│   │
+│   ├── config.py
+│   │   → Environment variables and settings
+│   │
+│   ├── dependencies.py
+│   │   → get_db(), get_current_user()
+│   │
+│   ├── models/
+│   │   │
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── semester.py
+│   │   ├── subject.py
+│   │   ├── task.py
+│   │   └── study_session.py
+│   │
+│   ├── schemas/
+│   │   │
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── semester.py
+│   │   ├── subject.py
+│   │   ├── task.py
+│   │   ├── study_session.py
+│   │   ├── dashboard.py
+│   │   └── analytics.py
+│   │
+│   ├── routers/
+│   │   │
+│   │   ├── __init__.py
+│   │   ├── auth.py
+│   │   ├── semester.py
+│   │   ├── subject.py
+│   │   ├── tasks.py
+│   │   ├── study_session.py
+│   │   ├── dashboard.py
+│   │   └── analytics.py
+│   │
+│   ├── utils/
+│   │   │
+│   │   ├── __init__.py
+│   │   ├── security.py
+│   │   │   → hash_password()
+│   │   │   → verify_password()
+│   │   │   → create_access_token()
+│   │   │
+│   │   └── constants.py
+│   │
+│   └── services/
+│   │       (optional for future business logic)
+│   │
+│   └── tests/
+│       ├── test_auth.py
+│       ├── test_subject.py
+│       ├── test_task.py
+│       └── ...
+│
+├── requirements.txt
+├── .env
+├── .gitignore
+└── README.md
+
+
+
+
+
+   Features currently covered
+      /Authentication
+Register
+Login
+JWT Token
+Protected Routes
+S       /emester Management
+Create Semester
+View Semesters
+Update Semester
+        /Subject Management
+Create Subject
+Update Subject
+Delete Subject
+          /Daily Study Target
+Priority Levels
+Task Management
+Create Task
+Update Task
+Delete Task
+Deadline
+Priority
+Status Tracking
+       /Study Sessions
+Create Session
+Update Session
+Delete Session
+Start Time
+End Time
+Duration Tracking
+         /Dashboard
+Total Semesters
+Total Subjects
+Total Tasks
+Completed Tasks
+Pending Tasks
+Overdue Tasks
+Total Study Hours
+           /Analytics
+
+
+
+
+uvicorn app.main:app --reload
+wiki@example.com
+string1234

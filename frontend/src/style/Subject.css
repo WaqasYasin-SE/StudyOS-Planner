@@ -1,0 +1,364 @@
+/* ==========================
+   Subjects Page
+========================== */
+
+.subjects-page {
+    padding: 30px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.subjects-header {
+    margin-bottom: 30px;
+}
+
+.subjects-header h1 {
+    font-size: 32px;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.subjects-header p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* ==========================
+   Subject Form
+========================== */
+
+.subject-form {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+
+    margin-bottom: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+.subject-form h2 {
+
+    margin: 0;
+
+    color: #111827;
+
+}
+
+.subject-form input,
+.subject-form select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    transition: .3s;
+
+}
+
+.subject-form input:focus,
+.subject-form select:focus {
+
+    outline: none;
+
+    border-color: #4f46e5;
+
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, .15);
+
+}
+
+.subject-form button {
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: .3s;
+
+}
+
+.subject-form button[type="submit"] {
+
+    background: #4f46e5;
+
+    color: white;
+
+}
+
+.subject-form button[type="submit"]:hover {
+
+    background: #4338ca;
+
+}
+
+.subject-form button[type="button"] {
+
+    background: #e5e7eb;
+
+}
+
+.subject-form button[type="button"]:hover {
+
+    background: #d1d5db;
+
+}
+
+/* ==========================
+   Grid
+========================== */
+
+.subjects-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 20px;
+
+}
+
+/* ==========================
+   Subject Card
+========================== */
+
+.subject-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
+}
+
+.subject-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .12);
+
+}
+
+.subject-card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+}
+
+.subject-card-header h2 {
+
+    margin: 0;
+
+    color: #1f2937;
+
+}
+
+.subject-card-header p {
+
+    margin-top: 6px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+}
+
+.subject-card-body p {
+
+    margin: 10px 0;
+
+    color: #374151;
+
+}
+
+.subject-card-footer {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.edit-btn {
+
+    flex: 1;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.edit-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+.delete-btn {
+
+    flex: 1;
+
+    background: #dc2626;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.delete-btn:hover {
+
+    background: #b91c1c;
+
+}
+
+/* ==========================
+   Priority Badge
+========================== */
+
+.priority {
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+.priority.low {
+
+    background: #16a34a;
+
+}
+
+.priority.medium {
+
+    background: #f59e0b;
+
+}
+
+.priority.high {
+
+    background: #dc2626;
+
+}
+
+/* ==========================
+   Empty State
+========================== */
+
+.empty-state {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+
+}
+
+.empty-state h3 {
+
+    margin-bottom: 10px;
+
+    color: #111827;
+
+}
+
+.empty-state p {
+
+    color: #6b7280;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:768px) {
+
+    .subjects-page {
+
+        padding: 15px;
+
+    }
+
+    .subjects-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .subject-card-footer {
+
+        flex-direction: column;
+
+    }
+
+}
